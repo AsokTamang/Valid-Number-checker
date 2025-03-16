@@ -19,7 +19,7 @@ const checklength=(item)=>{
         regex4=/^\d{10}$/g
         item=item.replace(/[^\+\d\-\(\)]/g,"");
         item=item.replace(/\s/g,"");
-        if (regex1.test(item)||regex2.test(item)||regex3.test(item)||regex4.test(item)){  // this code checks whether the regexpattern completely matches the string or not.
+        if (regex1.test(item)||regex2.test(item)||regex3.test(item)||regex4.test(item)){  // this code checks whether the regexpattern completely matches the string or not
             good(item); 
         }
         else{
@@ -40,7 +40,7 @@ const checklength=(item)=>{
         number.value="";
         result.textContent="";
     });
-    check.addEventListener('keydown',(e)=>{
+    number.addEventListener('keydown',(e)=>{
         if(e.key==="Enter"){
             
             checkfirst((number.value));
